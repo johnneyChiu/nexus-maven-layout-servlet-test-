@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.xiaoq.moduleLayout</groupId>
+		<artifactId>layoutParent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>layoutFramework-web</artifactId>
+	<packaging>war</packaging>
+	<name>layoutFramework-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+		<!-- my project -->
+		<dependency>
+			<groupId>com.xiaoq.moduleLayout</groupId>
+			<artifactId>layoutFramework-domain</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xiaoq.moduleLayout</groupId>
+			<artifactId>layoutFramework-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xiaoq.moduleLayout</groupId>
+			<artifactId>layoutFramework-utils</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- others -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
