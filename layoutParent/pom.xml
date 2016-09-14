@@ -41,7 +41,7 @@
 			<name>maven-central</name>
 			<url>http://127.0.0.1:8081/nexus/repository/myPoxy</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</releases>
 			<snapshots>
 				<enabled>false</enabled>
@@ -53,8 +53,9 @@
 			<name>my-own-release</name>
 			<url>http://localhost:8081/nexus/repository/releaseHost</url>
 			<releases>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</releases>
+			
 		</repository>
 	</repositories>
 
@@ -136,7 +137,8 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<stopKey>quit</stopKey>
-					<jettyXml> ${project.basedir}/jetty2.xml,${project.basedir}/jetty-http.xml<!-- jetty.xml,jetty-ssl.xml,jetty-https.xml -->
+					<stopPort>9011</stopPort>
+					<jettyXml> ${project.basedir}/src/main/resources/jettySetting/jetty2.xml,${project.basedir}/src/main/resources/jettySetting/jetty-http.xml,${project.basedir}/src/main/resources/jettySetting/jetty-ssl.xml,${project.basedir}/src/main/resources/jettySetting/jetty-https.xml
 					</jettyXml>
 					<webApp>
 						<contextPath>/${project.artifactId}</contextPath>
