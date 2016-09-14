@@ -5,7 +5,7 @@
 # 一、安装nexus 创建远程库myProxy和私库relaseHost、snapshotHost
 # 二、安装maven 设置setting.xml的本地库位置
 # 三、创建dependency.profile依赖库maven项目,并deploy到私库releaseHost或者snapshotHost
-# 四、创建分层的maven项目并将maven setting.xml插件添加<pluginGroup>org.mortbay.jetty</pluginGroup>
+# 四、创建分层的maven项目并将maven setting.xml插件添加<code><pluginGroup>org.mortbay.jetty</pluginGroup></code>
 # 五、启动 jetty:run -e
 # 六、打开页面http://localhost:8099/layoutFramework-web/hello/12
 # </div>
